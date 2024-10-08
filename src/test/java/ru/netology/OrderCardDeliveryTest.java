@@ -24,7 +24,8 @@ public class OrderCardDeliveryTest {
 
     @BeforeAll
     public static void setUp() {
-        WebDriverManager.chromedriver().setup(); // Автоматически подбирает нужную версию ChromeDriver
+        //WebDriverManager.chromedriver().setup(); // Автоматически подбирает нужную версию ChromeDriver
+        WebDriverManager.chromedriver().driverVersion("129.0.6668.90").setup();
         Configuration.browser = "chrome";
         Configuration.headless = true; // Запуск в headless режиме
     }
