@@ -22,13 +22,13 @@ public class OrderCardDeliveryTest {
                 new Locale("ru")));
     }
 
-    @BeforeAll
-    public static void setUp() {
+   // @BeforeAll
+    //public static void setUp() {
         //WebDriverManager.chromedriver().setup(); // Автоматически подбирает нужную версию ChromeDriver
-        WebDriverManager.chromedriver().driverVersion("129.0.6668.90").setup();
-        Configuration.browser = "chrome";
-        Configuration.headless = true; // Запуск в headless режиме
-    }
+    //    WebDriverManager.chromedriver().driverVersion("129.0.6668.90").setup();
+    //    Configuration.browser = "chrome";
+     //   Configuration.headless = true; // Запуск в headless режиме
+   // }
     @BeforeEach
     void setupTest() {
         open("http://localhost:9999");
